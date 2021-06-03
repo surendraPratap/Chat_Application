@@ -21,9 +21,7 @@ app.use(express.static(publicDirectoryPath))
 // let count = 0;
 
 io.on('connection', (socket) => {
-    console.log('New Web Socket connection')
-
-
+    console.log('New Web Socket connection Stablish')
 
     socket.on('join', ({ username, room }, callback) => {
 
